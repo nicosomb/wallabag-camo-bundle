@@ -10,13 +10,13 @@
     "camo",
     "proxy"
   ],
-  "licence": "MIT",
+  "homepage": "https://github.com/nicosomb/wallabag-camo-bundle",
+  "license": "MIT",
   "authors": [
     {
       "name": "Nicolas Lœuillet",
       "email": "nicolas@loeuillet.org",
-      "homepage": "https://nicolas.loeuillet.org",
-      "role": "Developer"
+      "homepage": "https://nicolas.loeuillet.org"
     }
   ],
   "require": {
@@ -24,11 +24,10 @@
     "willwashburn/phpamo": "^1.0"
   },
   "autoload": {
-    "psr-0": {
+    "psr-4": {
       "Nicosomb\\WallabagCamoBundle\\": ""
     }
-  },
+},
   "minimum-stability": "dev",
-  "prefer-stable": true,
-  "target-dir": "Nicosomb/WallabagCamoBundle"
+  "prefer-stable": true
 }
