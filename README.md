@@ -44,7 +44,7 @@ class AppKernel extends Kernel
 # app/config/config.yml
 
 nicosomb_wallabag_camo:
-    key: 8201937eca2c9d34f3c8b3edd18c3113000291847bbceebec8c4aa481e82b1dc
+    key: YOUR_CAMO_KEY
     domain: your-wallabag.herokuapp.com
 ```
 

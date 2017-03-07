@@ -15,7 +15,6 @@ class Configuration implements ConfigurationInterface
         $treeBuilder = new TreeBuilder();
         $rootNode = $treeBuilder->root('nicosomb_wallabag_camo');
 
-
         $rootNode
             ->children()
                 ->scalarNode('key')
