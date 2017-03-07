@@ -47,3 +47,11 @@ nicosomb_wallabag_camo:
     key: 8201937eca2c9d34f3c8b3edd18c3113000291847bbceebec8c4aa481e82b1dc
     domain: your-wallabag.herokuapp.com
 ```
+
+### Setting `camo_images_enabled`
+
+You need to create a new setting, `camo_images_enabled`. 
+
+```sql
+INSERT INTO `wallabag_craue_config_setting` (`name`, `value`, `section`) VALUES ('camo_images_enabled', 1, 'misc');
+```
