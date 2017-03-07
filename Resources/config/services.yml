@@ -1,0 +1,22 @@
+services:
+    nicosomb.wallabag.camo:
+        class: WillWashburn\Phpamo\Phpamo
+        arguments:
+                - "%nicosomb_wallabag_camo.key%"
+                - "%nicosomb_wallabag_camo.domain%"
+
+    nicosomb.wallabag.camo_images:
+        class: Nicosomb\WallabagCamoBundle\Event\Subscriber\CamoImagesSubscriber
+        arguments:
+            - "@doctrine.orm.default_entity_manager"
+            - "@nicosomb.wallabag.camo_update_images"
+            - '@=service(''craue_config'').get(''camo_images_enabled'')'
+            - "@logger"
+        tags:
+            - { name: kernel.event_subscriber }
+
+    nicosomb.wallabag.camo_update_images:
+        class: Nicosomb\WallabagCamoBundle\Helper\CamoUpdateImages
+        arguments:
+            - "@nicosomb.wallabag.camo"
+            - "@logger"

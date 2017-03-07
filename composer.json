@@ -1,0 +1,34 @@
+{
+  "name": "nicosomb/wallabag-camo-bundle",
+  "description": "Add an http proxy to route images through SSL for your wallabag instance.",
+  "type": "symfony-bundle",
+  "keywords": [
+    "wallabag",
+    "wallabag-plugin",
+    "symfony3",
+    "bundle",
+    "camo",
+    "proxy"
+  ],
+  "licence": "MIT",
+  "authors": [
+    {
+      "name": "Nicolas Lœuillet",
+      "email": "nicolas@loeuillet.org",
+      "homepage": "https://nicolas.loeuillet.org",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=5.3.3",
+    "willwashburn/phpamo": "^1.0"
+  },
+  "autoload": {
+    "psr-0": {
+      "Nicosomb\\WallabagCamoBundle\\": ""
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "target-dir": "Nicosomb/WallabagCamoBundle"
+}
