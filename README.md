@@ -53,5 +53,5 @@ nicosomb_wallabag_camo:
 You need to create a new setting, `camo_images_enabled`. 
 
 ```sql
-INSERT INTO `wallabag_craue_config_setting` (`name`, `value`, `section`) VALUES ('camo_images_enabled', 1, 'misc');
+INSERT INTO `wallabag_internal_setting` (`name`, `value`, `section`) VALUES ('camo_images_enabled', 1, 'misc');
 ```
