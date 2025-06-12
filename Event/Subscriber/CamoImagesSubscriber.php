@@ -5,8 +5,8 @@ namespace Nicosomb\WallabagCamoBundle\Event\Subscriber;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Psr\Log\LoggerInterface;
 use Nicosomb\WallabagCamoBundle\Helper\CamoUpdateImages;
-use Wallabag\CoreBundle\Entity\Entry;
-use Wallabag\CoreBundle\Event\EntrySavedEvent;
+use Wallabag\Entity\Entry;
+use Wallabag\Event\EntrySavedEvent;
 use Doctrine\ORM\EntityManager;
 
 class CamoImagesSubscriber implements EventSubscriberInterface
